@@ -120,11 +120,11 @@ Our code is based on [SurroundDepth](https://github.com/weiyithu/SurroundDepth).
 
 If you find this project useful in your research, please consider cite:
 ```
-@article{wenjie-S3Depth,
-    title={A Simple Baseline for Supervised Surround-view Depth Estimation},
-    author={Xianda Guo, Wenjie Yuan, Yunpeng Zhang, Tian Yang, Chenming Zhang, Zheng Zhu},
-    journal={},
-    year={2023}
+@article{guo2023simple,
+  title={A simple baseline for supervised surround-view depth estimation},
+  author={Guo, Xianda and Yuan, Wenjie and Zhang, Yunpeng and Yang, Tian and Zhang, Chenming and Zhu, Zheng and Chen, Long},
+  journal={arXiv preprint arXiv:2303.07759},
+  year={2023}
 }
 ```
 
