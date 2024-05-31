@@ -30,12 +30,12 @@ achieves superior performance over existing state-of-the-art methods on both DDA
 ## Install
 * python 3.7.11, pytorch 1.9.0, CUDA 11.1, RTX 3090
 ```bash
-git clone https://github.com/wenjie.yuan/S3Depth.git
+git clone https://github.com/XiandaGuo/SSDepth.git
 conda create -n s3depth python=3.8
 conda activate s3depth
 pip install -r requirements.txt
 ```
-Since we use [dgp codebase](https://github.com/TRI-ML/dgp) to generate groundtruth depth, you should also install it. 
+Since we use [dgp codebase](https://github.com/TRI-ML/dgp) to generate ground-truth depth, you should also install it. 
 
 ## Data Preparation
 Datasets are assumed to be downloaded under `data/<dataset-name>`.
@@ -43,7 +43,7 @@ Datasets are assumed to be downloaded under `data/<dataset-name>`.
 ### DDAD
 * Please download the official [DDAD dataset](https://tri-ml-public.s3.amazonaws.com/github/DDAD/datasets/DDAD.tar) and place them under `data/ddad/raw_data`. You may refer to official [DDAD repository](https://github.com/TRI-ML/DDAD) for more info and instructions.
 * Please download [metadata](https://cloud.tsinghua.edu.cn/f/50cb1ea5b1344db8b51c/?dl=1) of DDAD and place these pkl files in `datasets/ddad`.
-* We provide annotated self-occlusion masks for each sequences. Please download [masks](https://cloud.tsinghua.edu.cn/f/c654cd272a6a42c885f9/?dl=1) and place them in `data/ddad/mask`.
+* We provide annotated self-occlusion masks for each sequence. Please download [masks](https://cloud.tsinghua.edu.cn/f/c654cd272a6a42c885f9/?dl=1) and place them in `data/ddad/mask`.
 * Export depth maps for evaluation 
 ```bash
 cd tools
@@ -75,7 +75,7 @@ cd tools
 python export_gt_depth_nusc.py train
 python export_gt_depth_nusc.py val
 ```
-* Gets a token that has a front and back frame ('pre' and 'next' attributes),which is given in the code.
+* Gets a token that has a front and back frame ('pre' and 'next' attributes), which is given in the code.
 ```bash
 python create_nusc_token.py
 ```
@@ -117,7 +117,7 @@ Our code is based on [SurroundDepth](https://github.com/weiyithu/SurroundDepth).
 
 ## Citation
 
-If you find this project useful in your research, please consider cite:
+If you find this project useful in your research, please consider citing:
 ```
 @article{guo2023simple,
   title={A simple baseline for supervised surround-view depth estimation},
