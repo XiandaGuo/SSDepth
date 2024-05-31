@@ -1,8 +1,7 @@
-# S3Depth
 ###  [Paper](https://arxiv.org/abs/2303.07759)
 <br/>
 
-> A Simple Baseline for Supervised Surround-view Depth Estimation      
+> Benchmark for Supervised Surround-view Depth Estimation     
 > [Xianda Guo](https://scholar.google.com.hk/citations?hl=zh-CN&user=jPvOqgYAAAAJ) , [Wenjie Yuan](https://scholar.google.com.hk/citations?user=3TjQ1soAAAAJ&hl=zh-CN), [Yunpeng Zhang](https://github.com/PenPen-ThuSilence), [Tian Yang](http://linkedin.com/in/tian-yang-043949155), [Chenming Zhang](https://orcid.org/0000-0001-6094-4511), [Zheng Zhu](http://www.zhengzhu.net/)
 
 
