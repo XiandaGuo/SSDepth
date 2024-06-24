@@ -7,16 +7,7 @@
 
 
 ## Introduction
-Depth estimation has been widely studied and serves as the fundamental step of 3D perception for autonomous driving.
-Though significant progress has been made for monocular depth estimation in the past decades, these attempts are mainly 
-conducted on the KITTI benchmark with only front-view cameras, which ignores the correlations across surround-view cameras. 
-In this paper, we propose S3Depth,a Simple Baseline for Supervised Surround-view Depth Estimation,to jointly predict the depth maps across multiple
-surrounding cameras. Specifically, we employ a global-to-local feature extraction module which combines CNN
-with transformer layers for enriched representations. Further,the Adjacent-view Attention mechanism is proposed
-to enable the intra-view and inter-view feature propagation.The former is achieved by the self-attention module within
-each view, while the latter is realized by the adjacent attention module, which computes the attention across multicameras
-to exchange the multi-scale representations acrosssurround-view feature maps. Extensive experiments show that our method 
-achieves superior performance over existing state-of-the-art methods on both DDAD and nuScenes datasets.
+Depth estimation has been widely studied and serves as the fundamental step of 3D perception for autonomous driving. Though significant progress has been made in monocular depth estimation in the past decades, these attempts are mainly conducted on the KITTI benchmark with only front-view cameras, which ignores the correlations across surround-view cameras. In this paper, we propose S3Depth, a Simple Baseline for Supervised Surround-view Depth Estimation, to jointly predict the depth maps across multiple surrounding cameras. Specifically, we employ a global-to-local feature extraction module that combines CNN with transformer layers for enriched representations. Further, the Adjacent-view Attention mechanism is proposed to enable the intra-view and inter-view feature propagation. The former is achieved by the self-attention module within each view, while the latter is realized by the adjacent attention module, which computes the attention across multi-cameras to exchange the multi-scale representations across surround-view feature maps. Extensive experiments show that our method achieves superior performance over existing state-of-the-art methods on both DDAD and nuScenes datasets.
 
 ## Model Zoo
 
@@ -28,7 +19,7 @@ achieves superior performance over existing state-of-the-art methods on both DDA
 | scale-aware | nuScenes | 0.067  | 0.673 | 2.457 | 0.144 | 0.951 | 0.970 | 0.981 | [model](https://pan.baidu.com/s/1ZfjIPVHPiBn8yC7yy30ahA?pwd=rfru) |
 
 ## Install
-* python 3.7.11, pytorch 1.9.0, CUDA 11.1, RTX 3090
+* python 3.7.11, PyTorch 1.9.0, CUDA 11.1, RTX 3090
 ```bash
 git clone https://github.com/XiandaGuo/SSDepth.git
 conda create -n s3depth python=3.8
@@ -100,7 +91,7 @@ SurroundDepth
 ```
 
 ## Training
-Take Nusc dataset as an example. 
+Take nuScenes dataset as an example. 
 ```bash
 python -m torch.distributed.launch --nproc_per_node 8 run.py  --model_name mpvit_selfadj  --config configs/nusc_mpvit_selfadj.txt
 ```
