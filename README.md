@@ -104,7 +104,7 @@ python -m torch.distributed.launch --nproc_per_node ${NUM_GPU}  run.py  --model_
 
 ## Acknowledgement
 
-Our code is based on [SurroundDepth](https://github.com/weiyithu/SurroundDepth).
+[SurroundDepth](https://github.com/weiyithu/SurroundDepth).
 
 ## Citation
 
