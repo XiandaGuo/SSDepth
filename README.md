@@ -113,8 +113,8 @@ If you find this project useful in your research, please consider citing:
 @article{guo2023simple,
   title={Benchmark for Supervised Surround-view Depth Estimation},
   author={Guo, Xianda and Yuan, Wenjie and Zhang, Yunpeng and Yang, Tian and Zhang, Chenming and Zhu, Zheng and Chen, Long},
-  journal={arXiv preprint arXiv:2303.07759},
-  year={2023}
+  journal={IROS},
+  year={2025}
 }
 ```
 
