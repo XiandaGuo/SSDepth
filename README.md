@@ -110,7 +110,7 @@ python -m torch.distributed.launch --nproc_per_node ${NUM_GPU}  run.py  --model_
 
 If you find this project useful in your research, please consider citing:
 ```
-@article{guo2023simple,
+@inproceedings{guo2023simple,
   title={Benchmark for Supervised Surround-view Depth Estimation},
   author={Guo, Xianda and Yuan, Wenjie and Zhang, Yunpeng and Yang, Tian and Zhang, Chenming and Zhu, Zheng and Chen, Long},
   journal={IROS},
