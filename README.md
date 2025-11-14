@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO -->
-<h1 align="center">Benchmark for Supervised Surround-view Depth Estimation</h1>
+<h1 align="center">Adjacent-view Transformers for Supervised Surround-view Depth Estimation</h1>
 
 ###  [Paper](https://arxiv.org/abs/2303.07759)
 > Benchmark for Supervised Surround-view Depth Estimation     
-> [Xianda Guo](https://scholar.google.com.hk/citations?hl=zh-CN&user=jPvOqgYAAAAJ) , [Wenjie Yuan](https://scholar.google.com.hk/citations?user=3TjQ1soAAAAJ&hl=zh-CN), [Yunpeng Zhang](https://scholar.google.com/citations?user=UgadGL8AAAAJ&hl=en), Tian Yang, Chenming Zhang, [Zheng Zhu](http://www.zhengzhu.net/), [Long Chen](https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=en)
+> [Xianda Guo](https://scholar.google.com.hk/citations?hl=zh-CN&user=jPvOqgYAAAAJ) , [Wenjie Yuan](https://scholar.google.com.hk/citations?user=3TjQ1soAAAAJ&hl=zh-CN), [Yunpeng Zhang](https://scholar.google.com/citations?user=UgadGL8AAAAJ&hl=en), Tian Yang, Chenming Zhang, [Zheng Zhu](http://www.zhengzhu.net/), Qin Zou, [Long Chen](https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=en)
 
 
 ## Introduction
@@ -91,7 +91,7 @@ SurroundDepth
 ```
 
 ## Training
-Take nuScenes dataset as an example. 
+Take the nuScenes dataset as an example. 
 ```bash
 python -m torch.distributed.launch --nproc_per_node 8 run.py  --model_name mpvit_selfadj  --config configs/nusc_mpvit_selfadj.txt
 ```
@@ -111,9 +111,9 @@ python -m torch.distributed.launch --nproc_per_node ${NUM_GPU}  run.py  --model_
 If you find this project useful in your research, please consider citing:
 ```
 @inproceedings{guo2023simple,
-  title={Benchmark for Supervised Surround-view Depth Estimation},
-  author={Guo, Xianda and Yuan, Wenjie and Zhang, Yunpeng and Yang, Tian and Zhang, Chenming and Zhu, Zheng and Chen, Long},
-  journal={IROS},
+  title={Adjacent-view Transformers for Supervised Surround-view Depth Estimation},
+  author={Guo, Xianda and Yuan, Wenjie and Zhang, Yunpeng and Yang, Tian and Zhang, Chenming and Zhu, Zheng and Zou, Qin and Chen, Long},
+  booktitle={IROS},
   year={2025}
 }
 ```
