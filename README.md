@@ -2,7 +2,7 @@
 <h1 align="center">Adjacent-view Transformers for Supervised Surround-view Depth Estimation</h1>
 
 ###  [Paper](https://arxiv.org/abs/2303.07759)
-> Benchmark for Supervised Surround-view Depth Estimation     
+> Adjacent-view Transformers for Supervised Surround-view Depth Estimation     
 > [Xianda Guo](https://scholar.google.com.hk/citations?hl=zh-CN&user=jPvOqgYAAAAJ) , [Wenjie Yuan](https://scholar.google.com.hk/citations?user=3TjQ1soAAAAJ&hl=zh-CN), [Yunpeng Zhang](https://scholar.google.com/citations?user=UgadGL8AAAAJ&hl=en), Tian Yang, Chenming Zhang, [Zheng Zhu](http://www.zhengzhu.net/), Qin Zou, [Long Chen](https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=en)
 
 
